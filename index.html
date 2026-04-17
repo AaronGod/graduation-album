@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>木兰江西幼儿园 · 毕业纪念册</title>
+    <meta
+      name="description"
+      content="香宝宝木兰江西幼儿园梁胜分园 2026 届大一班毕业纪念相册。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="paper-grain"></div>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Kindergarten Graduation Album · 2026</p>
+          <h1>把这个夏天，装订成一本会发光的纪念册</h1>
+          <p class="hero-text">
+            香宝宝木兰江西幼儿园梁胜分园大一班的毕业时光，被收进一页页温柔的纸张里。
+            这不是普通图库，而是一份给孩子、老师和家长共同珍藏的毕业礼物。
+          </p>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-value" data-total-photos>92</span>
+              <span class="stat-label">张珍贵照片</span>
+            </div>
+            <div>
+              <span class="stat-value">2026</span>
+              <span class="stat-label">届毕业纪念</span>
+            </div>
+            <div>
+              <span class="stat-value">∞</span>
+              <span class="stat-label">次温柔回看</span>
+            </div>
+          </div>
+          <a class="hero-button" href="#gallery">翻开纪念册</a>
+        </div>
+        <div class="hero-collage" id="hero-collage"></div>
+      </header>
+
+      <section class="intro-card">
+        <p>乘着风的翅膀，聆听鸟的歌唱，踏着时间的旋律，我们走进了毕业季。</p>
+      </section>
+
+      <main>
+        <section class="section-heading">
+          <p class="eyebrow">Memory Wall</p>
+          <h2>毕业照片长廊</h2>
+          <p>
+            点击任意照片即可全屏查看。页面采用静态结构，适合直接部署到 Cloudflare Pages。
+          </p>
+        </section>
+
+        <section class="gallery-grid" id="gallery" aria-label="毕业相册照片墙"></section>
+      </main>
+    </div>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightbox-close" aria-label="关闭预览">×</button>
+      <button class="lightbox-nav prev" id="prev-photo" aria-label="上一张">‹</button>
+      <div class="lightbox-body">
+        <img id="lightbox-image" alt="毕业照预览" />
+        <div class="lightbox-meta">
+          <p class="lightbox-index" id="lightbox-index"></p>
+          <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+      </div>
+      <button class="lightbox-nav next" id="next-photo" aria-label="下一张">›</button>
+    </dialog>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

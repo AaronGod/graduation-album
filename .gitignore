@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and local tooling
+.vscode/
+.claude/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local verification outputs
+desktop-shot.png
+mobile-shot.png
+
+# Scraping and intermediate files
+maka_page.html
+works.json
+image_urls.txt
+photo_manifest.json
+
+# Logs
+*.log
