@@ -19,7 +19,8 @@ let photos = [];
 let activeIndex = 0;
 
 const renderHero = () => {
-  const picks = [0, 76, 91].map((index, idx) => ({ ...photos[index], note: heroNotes[idx] }));
+  const pickIndexes = [0, Math.floor((photos.length - 1) * 0.5), photos.length - 1];
+  const picks = pickIndexes.map((index, idx) => ({ ...photos[index], note: heroNotes[idx] }));
 
   heroCollage.innerHTML = picks
     .map(

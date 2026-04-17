@@ -20,5 +20,8 @@ works.json
 image_urls.txt
 photo_manifest.json
 
+# Excluded local image
+assets/images/photo-092.jpg
+
 # Logs
 *.log
